@@ -5,36 +5,14 @@ import { cn } from "@/lib/utils"
 
 const experiences = [
   {
-    company: "Entreprise A",
-    title: "Développeur Full-Stack Senior",
-    period: "2022 — Présent",
+    company: "La normandise",
+    title: "Stage développement Full-Stack",
+    period: "Juillet 2025 - Septembre 2025",
     description: [
       "Développement d'applications web avec React, Next.js et Node.js",
       "Architecture et mise en place de CI/CD pipelines",
       "Mentorat des développeurs juniors",
       "Optimisation des performances et de l'accessibilité",
-    ],
-  },
-  {
-    company: "Startup B",
-    title: "Développeur Front-End",
-    period: "2020 — 2022",
-    description: [
-      "Création d'interfaces utilisateur réactives avec React",
-      "Intégration de designs Figma en composants réutilisables",
-      "Collaboration avec l'équipe UX pour améliorer l'expérience utilisateur",
-      "Tests unitaires et d'intégration avec Jest et Cypress",
-    ],
-  },
-  {
-    company: "Agence C",
-    title: "Développeur Web Junior",
-    period: "2018 — 2020",
-    description: [
-      "Développement de sites web pour divers clients",
-      "Maintenance et évolution d'applications existantes",
-      "Apprentissage des bonnes pratiques de développement",
-      "Participation aux réunions clients et estimations",
     ],
   },
 ]

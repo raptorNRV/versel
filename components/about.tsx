@@ -11,18 +11,20 @@ export function About() {
       <div className="grid gap-12 md:grid-cols-3">
         <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
           <p>
-            Bonjour ! Je suis <span className="text-primary">Votre Nom</span>, développeur passionné par la création
-            d&apos;expériences digitales qui combinent design élégant et code performant.
+            Bonjour ! Je suis <span className="text-primary font-semibold">Lucas Mary</span>, développeur web freelance
+            basé à <strong>Caen</strong>, en Normandie. Passionné par le développement web depuis plusieurs années,
+            j&apos;aide les entreprises locales et nationales à développer leur présence en ligne.
           </p>
           <p>
-            Mon parcours dans le développement web a commencé il y a plusieurs années, et depuis, j&apos;ai eu le
-            privilège de travailler sur des projets variés, allant de startups innovantes à des entreprises établies.
+            Mon expertise couvre la <strong>création de sites internet</strong>, le développement d&apos;
+            <strong>applications web sur mesure</strong> et les solutions <strong>e-commerce</strong>. J&apos;interviens
+            auprès de startups, PME et entrepreneurs pour transformer leurs idées en produits digitaux performants.
           </p>
           <p>
-            Aujourd&apos;hui, je me concentre sur la création d&apos;applications web modernes avec les dernières
-            technologies, en mettant l&apos;accent sur l&apos;accessibilité et les bonnes pratiques.
+            Basé à Caen, je travaille avec des clients dans toute la <strong>Normandie</strong> (Caen, Rouen, Le Havre,
+            Cherbourg) mais également partout en France grâce au télétravail.
           </p>
-          <p>Voici quelques technologies avec lesquelles je travaille :</p>
+          <p>Voici les technologies que je maîtrise :</p>
           <ul className="grid grid-cols-2 gap-2 font-mono text-sm">
             {technologies.map((tech) => (
               <li key={tech} className="flex items-center gap-2">

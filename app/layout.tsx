@@ -7,9 +7,54 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 const firaCode = Fira_Code({ subsets: ["latin"], variable: "--font-mono" })
 
 export const metadata: Metadata = {
-  title: "Votre Nom | Développeur Full-Stack",
-  description: "Portfolio de développeur full-stack spécialisé dans la création d'applications web modernes.",
-  keywords: ["développeur", "full-stack", "react", "next.js", "portfolio"],
+  title: "Lucas Mary | Développeur Web Freelance à Caen - Création de Sites Internet",
+  description:
+    "Lucas Mary, développeur web freelance à Caen (Normandie). Création de sites internet, applications web sur mesure, e-commerce. Expert React, Next.js, Node.js. Devis gratuit.",
+  keywords: [
+    "développeur web Caen",
+    "développeur freelance Caen",
+    "création site internet Caen",
+    "développeur web Normandie",
+    "freelance web Caen",
+    "création site web Caen",
+    "développeur React Caen",
+    "développeur Next.js Caen",
+    "agence web Caen",
+    "site e-commerce Caen",
+    "Lucas Mary développeur",
+    "développeur full-stack Caen",
+  ],
+  authors: [{ name: "Lucas Mary" }],
+  creator: "Lucas Mary",
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    url: "https://lucasmary.fr",
+    title: "Lucas Mary | Développeur Web Freelance à Caen",
+    description:
+      "Développeur web freelance à Caen. Création de sites internet et applications web sur mesure. Expert React, Next.js, Node.js.",
+    siteName: "Lucas Mary - Développeur Web",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lucas Mary | Développeur Web Freelance à Caen",
+    description: "Développeur web freelance à Caen. Création de sites internet et applications web sur mesure.",
+    creator: "@lucasmary",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://lucasmary.fr",
+  },
     generator: 'v0.app'
 }
 
@@ -18,8 +63,44 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: "Lucas Mary - Développeur Web Freelance",
+    description: "Développeur web freelance spécialisé dans la création de sites internet et applications web à Caen",
+    url: "https://lucasmary.fr",
+    telephone: "+33600000000",
+    email: "contact@lucasmary.fr",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Caen",
+      addressRegion: "Normandie",
+      addressCountry: "FR",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 49.1829,
+      longitude: -0.3707,
+    },
+    areaServed: {
+      "@type": "GeoCircle",
+      geoMidpoint: {
+        "@type": "GeoCoordinates",
+        latitude: 49.1829,
+        longitude: -0.3707,
+      },
+      geoRadius: "50000",
+    },
+    priceRange: "€€",
+    openingHours: "Mo-Fr 09:00-18:00",
+    sameAs: ["https://github.com/lucasmary", "https://linkedin.com/in/lucasmary"],
+  }
+
   return (
     <html lang="fr">
+      <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      </head>
       <body className={`${inter.variable} ${firaCode.variable} font-sans antialiased`}>{children}</body>
     </html>
   )

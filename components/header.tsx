@@ -32,7 +32,7 @@ export function Header() {
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 md:px-12 lg:px-24">
         <Link href="/" className="text-xl font-bold text-primary hover:text-primary/80 transition-colors">
-          {"<VN />"}
+          {"<LM />"}
         </Link>
 
         {/* Desktop Navigation */}
@@ -47,7 +47,7 @@ export function Header() {
           ))}
           <li>
             <a
-              href="/cv.pdf"
+              href="/cv-lucas-mary.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 text-sm border border-primary text-primary rounded hover:bg-primary/10 transition-colors"
@@ -85,7 +85,7 @@ export function Header() {
             ))}
             <li>
               <a
-                href="/cv.pdf"
+                href="/cv-lucas-mary.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 border border-primary text-primary rounded hover:bg-primary/10 transition-colors"
