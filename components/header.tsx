@@ -85,7 +85,7 @@ export function Header() {
             ))}
             <li>
               <a
-                href="/cv-lucas-mary.pdf"
+                href="/CV_Mary_Lucas.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 border border-primary text-primary rounded hover:bg-primary/10 transition-colors"
